@@ -24,22 +24,26 @@ openCV / ImageNet
 
 ## Evaluation Plan
 
-Matrics:
--- Rate: diamond blocks that the agent reached / diamond blocks the agent passed
--- Height: hight that our agent reached (y-coordinate)
+Evaluate the successfule of the project:
+  Matrics:
+  -- Rate: diamond blocks that the agent reached / diamond blocks the agent passed
+  -- Height: hight that our agent reached (y-coordinate)
 
-Baseline:
--- hightest platform that agent can reach without considering getting extra rewards
+  Baseline:
+  -- hightest platform that agent can reach without considering getting extra rewards
 
-Data to eval:
--- life loss
--- reward gain
+  Data to eval:
+  -- life loss
+  -- reward gain
 
-Q-learning Loss function 
+Verfy the project works:
+  Sanity check: we need to make sure the agent can at least jump to the up level platform.
 
-a diagram showing the score per life as we train AI.
+  Q-learning Loss function 
 
-Cumulative Rewards diagram.
+  a diagram showing the score per life as we train AI
+
+  Cumulative Rewards diagram
 
 
 
