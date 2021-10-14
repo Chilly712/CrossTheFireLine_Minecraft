@@ -24,7 +24,7 @@ openCV / ImageNet
 
 ## Evaluation Plan
 
-### Evaluate the successfule of the project:
+### Evaluate the successful of the project:
 
   Matrics:
   
@@ -55,5 +55,5 @@ openCV / ImageNet
 
 
 
-## Appoitment with the Instructor
+## Appointment with the Instructor
 10.19 2:45PM
