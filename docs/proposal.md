@@ -24,21 +24,26 @@ openCV / ImageNet
 
 ## Evaluation Plan
 
-Evaluate the successfule of the project:
+#Evaluate the successfule of the project:
 
   Matrics:
+  
   -- Rate: diamond blocks that the agent reached / diamond blocks the agent passed
+  
   -- Height: hight that our agent reached (y-coordinate)
 
   Baseline:
+  
   -- hightest platform that agent can reach without considering getting extra rewards
 
   Data to eval:
+  
   -- life loss
+  
   -- reward gain
   
 
-Verfy the project works:
+#Verfy the project works:
 
   Sanity check: we need to make sure the agent can at least jump to the up level platform.
 
