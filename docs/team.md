@@ -6,11 +6,11 @@ title:  Team
 # {{ page.title }}
 
 
-## USER 1
+## Yi-Ju Tsai
 ***UCI Net ID***: yijut2
 
-## USER 2
+## Xinyi Huang
 ***UCI Net ID***: xinyih13
 
-## USER 3
+## Weixin Lin
 ***UCI Net ID***: weixil4
