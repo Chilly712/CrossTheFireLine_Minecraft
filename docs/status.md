@@ -14,6 +14,7 @@ In order to prevent the agent from walking aimlessly, we confine the agent and g
 
 ## Setup an Environment
 (picture)
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/env_image.jpg)
 
 ## Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
