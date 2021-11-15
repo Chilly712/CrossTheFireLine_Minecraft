@@ -41,7 +41,7 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
 
 # Remaining Goals and Challenges:  
   So far, we can observe the Fireball path and avoid getting hit beforehead since it is an entity from <ObservationFromNearbyEntities> within a certain amount of LineSight. We might want to improve how we avoid the fireball. For example, making the agent Steve's vision more wide and open, changing the orientation more often. 
-  We can also add the function of fire extinguishing, because a fireball can generate a lot of fire blocks, so sometimes it is difficult for the agent to cross the line of fire, if there is a fire extinguishing function will be more convenient for the agent not to receive harm
+  We can also add the function of fire extinguishing or reflact the fireball back to the ghast, because a fireball can generate a lot of fire blocks, so sometimes it is difficult for the agent to cross the line of fire, if there is a fire extinguishing function will be more convenient for the agent not to receive harm
 
 # Resources Used:   
   previous assignments
