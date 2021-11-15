@@ -51,3 +51,5 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
   PPO.PPOTrainer
   
   Matplotlib
+  
+  NumPy documentation
