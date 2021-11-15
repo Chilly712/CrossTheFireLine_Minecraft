@@ -4,17 +4,7 @@ title:  Status
 ---
 
 # Project Summary: 
-  Since things may have changed since proposal (even if they haven’t), write a short paragraph summarizing the goals of the project (updated/improved version from the proposal).
-  We will be implementing a game inside Minecraft. Similiar to the dodgeball, but instead, we will be avoiding fireballs.
-  
-  A ghast that can shoot fireballs will appear in the air and move randomly.
-  When fireball falls to the ground, the stone will be set on fire and that block will convert into a fire block.
-  Both our agent Steve and the Ghast's activity space will be limited inside the 60 x 60 area, surrounded by sand walls.
-  Steve need to observe his surroundings and avoid both fireball in the air and the fire blocks on the ground.
-  We plan to train the Agent to avoid get hit by the FireBall and also avoid the Fire block on the ground. 
-  
-  
-  
+  We implemented a game called CrossTheFireLine, similiar to the Dodge Ball; the agent should learn to avoid getting hit by the fireball from the Ghast as well as  to avoid stepping on the fire block. A ghast that can shoot fireballs will appear in the air and move randomly. When fireball falls to the ground, the stone will be set on fire and these blocks will convert into fire blocks. If the agent steps on the fire or get git by the fireball, it will receive the negative reward. Both our agent Steve and the Ghast's activity space will be limited inside the 60 x 60 area, surrounded by sand walls. Steve needs to observe his surroundings and avoid getting negative reward so that he can survive for longer time.
   
 # Approach: 
   Give a detailed description of your approach, in a few paragraphs. You should summarize the main algorithm you are using, such as by writing out the update equation (even if it is off-the-shelf). You should also give details about the approach as it applies to your scenario. For example, if you are using reinforcement learning for a given scenario, describe the setup in some detail, i.e. how many states/actions you have, what does the reward function look like. A good guideline is to incorporate sufficient details so that most of your approach is reproducible by a reader. I encourage you to use figures for this, as appropriate, as we used in the writeups for the assignments. I recommend at least 2-3 paragraphs.
