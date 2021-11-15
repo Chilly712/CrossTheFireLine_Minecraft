@@ -12,7 +12,7 @@ title:  Status
 
 In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform continuous actions to avoid the fireball. Currently, we continued apply the Proximal Policy Optimization (PPO) to train our agent.
 
-We can observe the coming of the Fireball from <ObservationsFromNearbyEntities>, from the XYZ and motion XYZ, the end point of the Fireball can be calculated.
+We can observe the coming of the Fireball from <ObservationsFromNearbyEntities> the end point of the Fireball can be calculated and a graph is showed by Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ)
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/Fireball_Path.jpg)
 
 
@@ -49,3 +49,5 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
   Malmo project documentation
   
   PPO.PPOTrainer
+  
+  Matplotlib
