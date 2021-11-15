@@ -35,15 +35,11 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
 # Evaluation: 
   An important aspect of your project, as we mentioned in the beginning, is evaluating your project. Be clear and precise about describing the evaluation setup, for both quantitative and qualitative results. Present the results to convince the reader that you have a working implementation. Use plots, charts, tables, screenshots, figures, etc. as needed. I expect you will need at least a 1-2 paragraphs to describe each type of evaluation that you perform.
 
-# Remaining Goals and Challenges: 
-  In a few paragraphs, describe your goals for the next 4-5 weeks, when the final report is due. At the very least, describe how you consider your prototype to be limited, and what you want to add to make it a complete contribution. Note that if you think your algorithm is quite good, but have not performed sufficient evaluation, doing them can also be a reasonable goal. Similarly, you may propose some baselines (such as a hand-coded policy) that you did not get a chance to implement, but want to compare against for the final submission. Finally, given your experience so far, describe some of the challenges you anticipate facing by the time your final report is due, how crippling you think it might be, and what you might do to solve them.
-  
+# Remaining Goals and Challenges:  
   So far, we can observe the Fireball path and avoid getting hit beforehead since it is an entity from <ObservationFromNearbyEntities> within a certain amount of LineSight. We might want to improve how we avoid the fireball. For example, making the agent Steve's vision more wide and open, changing the orientation more often. 
   We can also add the function of fire extinguishing, because a fireball can generate a lot of fire blocks, so sometimes it is difficult for the agent to cross the line of fire, if there is a fire extinguishing function will be more convenient for the agent not to receive harm
 
-# Resources Used: 
-  Mention all the resources that you found useful in writing your implementation. This should include everything like code documentation, AI/ML libraries, source code that you used, StackOverflow, etc. You do not have to be comprehensive, but it is important to report the ones that are crucial to your project. I would like to know these so that the more useful ones can be shared with others in the course.
-  
+# Resources Used:   
   previous assignments
   Malmo project documentation
   PPO.PPOTrainer
