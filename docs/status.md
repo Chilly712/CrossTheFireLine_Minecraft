@@ -19,7 +19,7 @@ In order to prevent the agent from walking aimlessly, we confine the agent and g
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
 
 ## State
-In order to make the agent gain a larger view, we expand the array size returned by get_observation to be 5x5.
+In order to make the agent gain a larger view, we expand the array size returned by get_observation to be (5x5).
 
 ## Reward
 It is known that Ghast will launch a fireball at the position where the agent is located, and once the fireball hits the ground, it will ignite the stones on the floor and convert the stones into a fire block. We will get the 5x5 grid around the agent through get_observation() based on agent's location. Since the agent moves randomly during the training process, we use the coordinates of the agent to determine whether it is on the block hit by the fireball. If the agent is in the fire block, a negative reward is given. If the agent steps on the stone successfully, a positive reward will be given.
