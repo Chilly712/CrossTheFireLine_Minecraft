@@ -41,5 +41,7 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
 
 # Resources Used:   
   previous assignments
+  
   Malmo project documentation
+  
   PPO.PPOTrainer
