@@ -48,6 +48,12 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
   So far, we can observe the Fireball path and avoid getting hit beforehead since it is an entity from <ObservationFromNearbyEntities> within a certain amount of LineSight. We might want to improve how we avoid the fireball. For example, making the agent Steve's vision more wide and open, changing the orientation more often. 
   We can also add the function of fire extinguishing or reflact the fireball back to the ghast, because a fireball can generate a lot of fire blocks, so sometimes it is difficult for the agent to cross the line of fire, if there is a fire extinguishing function will be more convenient for the agent not to receive harm
   we recognize the encounter of the fireball base on the agent's previous location. In the future, we could implement a real-time monitoring on the fireball hitting  the agent utilizing computer vision & Imagenet.
+  
+  In general, we will change our algorithm in two ways.
+  
+1. change the input matrix 
+  
+2. refine the incentives and penalties
 
 # Resources Used:   
   Malmo project documentation and github page to set up the xml environment
