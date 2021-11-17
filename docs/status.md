@@ -23,7 +23,8 @@ We can observe the coming of the Fireball from <ObservationsFromNearbyEntities> 
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
 
 ## State
-In order to make the agent gain a larger view, we expand the array size returned by get_observation to be (5x5).
+We are using PPO, a policy gradient method for reinforcement learning to train the agent. During the implementation process, we add more input information for the neural network.
+Our observation space is a 2x5x5 grid. The first 5x5 grid represents the nearby blocks, containing ['fire', 'stone', 'air'], while the second 5x5 grid shows the possible blocks hitted by the fireballs.
 
 ## Reward
 It is known that Ghast will launch a fireball at the position where the agent is located, and once the fireball hits the ground, it will ignite the stones on the floor and convert the stones into a fire block. We will get the 5x5 grid around the agent through get_observation() based on agent's location. Since the agent moves randomly during the training process, we use the coordinates of the agent to determine whether it is on the block hit by the fireball. If the agent is in the fire block, a negative reward is given. If the agent steps on the stone successfully, a positive reward will be given.
