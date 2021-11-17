@@ -12,8 +12,8 @@ title:  Status
 
 In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform continuous actions to avoid the fireball. Currently, we continued apply the Proximal Policy Optimization (PPO) to train our agent.
 
-We can observe the coming of the Fireball from <ObservationsFromNearbyEntities> the end point of the Fireball can be calculated and a graph is showed by Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ)
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/Fireball_Path.jpg)
+We can observe the coming of the Fireball from <ObservationsFromNearbyEntities> the end point of the Fireball can be calculated and a graph is showed by Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ). 
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/axquiver.png)
 
 
 ## Setup an Environment
@@ -38,7 +38,7 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
 
 
 # Evaluation: 
-  An important aspect of your project, as we mentioned in the beginning, is evaluating your project. Be clear and precise about describing the evaluation setup, for both quantitative and qualitative results. Present the results to convince the reader that you have a working implementation. Use plots, charts, tables, screenshots, figures, etc. as needed. I expect you will need at least a 1-2 paragraphs to describe each type of evaluation that you perform.
+  We want to see a situation where the agent can only make random choices at the beginning, then the agent will die quickly.Howevr, as the number of training times increases, the agent knows what kind of action to preform to keep himself from dying.
   
  1. Survival Time Graph
   
