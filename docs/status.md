@@ -13,10 +13,10 @@ title:  Status
 In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform continuous actions to avoid the fireball. Currently, we continued apply the Proximal Policy Optimization (PPO) to train our agent.
 
 We can observe the coming of the Fireball from <ObservationsFromNearbyEntities> the end point of the Fireball can be calculated and a graph is showed by Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ). 
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/axquiver.png)
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/axquiver.png)
 
 ## Setup an Environment
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/env_image.jpg)
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/env.png)
 
 ## Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
