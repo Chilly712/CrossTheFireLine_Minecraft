@@ -38,18 +38,24 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
 
 # Evaluation: 
   An important aspect of your project, as we mentioned in the beginning, is evaluating your project. Be clear and precise about describing the evaluation setup, for both quantitative and qualitative results. Present the results to convince the reader that you have a working implementation. Use plots, charts, tables, screenshots, figures, etc. as needed. I expect you will need at least a 1-2 paragraphs to describe each type of evaluation that you perform.
+  
+ 1. Survival Time Graph
+  
+ 2. Reward Graph
 
 # Remaining Goals and Challenges:  
   So far, we can observe the Fireball path and avoid getting hit beforehead since it is an entity from <ObservationFromNearbyEntities> within a certain amount of LineSight. We might want to improve how we avoid the fireball. For example, making the agent Steve's vision more wide and open, changing the orientation more often. 
   We can also add the function of fire extinguishing or reflact the fireball back to the ghast, because a fireball can generate a lot of fire blocks, so sometimes it is difficult for the agent to cross the line of fire, if there is a fire extinguishing function will be more convenient for the agent not to receive harm
+  we recognize the encounter of the fireball base on the agent's previous location. In the future, we could implement a real-time monitoring on the fireball hitting  the agent utilizing computer vision & Imagenet.
 
 # Resources Used:   
-  previous assignments
+  Malmo project documentation and github page to set up the xml environment
   
-  Malmo project documentation
+http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
+https://github.com/microsoft/malmo
   
   PPO.PPOTrainer
   
-  Matplotlib
+  Matplotlib for plotting fireball path
   
   NumPy documentation
