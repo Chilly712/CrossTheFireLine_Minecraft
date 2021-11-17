@@ -52,6 +52,7 @@ The agent’s initial life is 20, and the damage of single fireball is not that 
   Malmo project documentation and github page to set up the xml environment
   
 http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
+  
 https://github.com/microsoft/malmo
   
   PPO.PPOTrainer
