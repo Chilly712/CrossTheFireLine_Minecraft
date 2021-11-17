@@ -4,7 +4,7 @@ title:  Status
 ---
 
 click image for video:
-[![Demo CountPages alpha](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/video.png)](https://youtu.be/F7zv8Ag7z1w)
+[![175Project](https://res.cloudinary.com/marcomontalbano/image/upload/v1637134840/video_to_markdown/images/youtube--F7zv8Ag7z1w-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=F7zv8Ag7z1w "175Project")
 
 <iframe class="youtube" height="300" src="https://youtu.be/embed/F7zv8Ag7z1w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
