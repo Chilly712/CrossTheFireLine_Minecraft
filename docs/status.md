@@ -3,6 +3,7 @@ layout: default
 title:  Status
 ---
 
+click image for video:
 [![Demo CountPages alpha](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/video.png)](https://youtu.be/F7zv8Ag7z1w)
 
 <iframe class="youtube" height="300" src="https://youtu.be/embed/F7zv8Ag7z1w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
