@@ -5,7 +5,7 @@ title:  Status
 
 [![Demo CountPages alpha](https://github.com/Chilly712/CrossTheFireLine_Minecraft)](https://youtu.be/F7zv8Ag7z1w)
 
-<iframe class="youtube" height="300" src="https://youtube/F7zv8Ag7z1w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="youtube" height="300" src="https://youtube/embed/F7zv8Ag7z1w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Project Summary: 
