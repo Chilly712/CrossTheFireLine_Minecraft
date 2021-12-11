@@ -23,10 +23,16 @@ title: Final Report
 
 # Reference: [TODO]
   Malmo project documentation and github page to set up the xml environment
+  <br>
   http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
+  <br>
   https://github.com/microsoft/malmo
+  <br>
   PPO.PPOTrainer
+  <br>
   Matplotlib for plotting fireball path
+  <br>
   NumPy documentation
+  <br>
   https://docs.ray.io/en/latest/rllib-env.html
   
