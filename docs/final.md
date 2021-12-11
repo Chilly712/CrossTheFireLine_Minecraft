@@ -23,13 +23,13 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
 # Evaluation: 
 We will use both quantitative and qualitative methods to evaluate out AI and show how our agent operates. 
 
-Quantitative Evaluation: 
+## Quantitative Evaluation: 
 
 We have two measurments. The following graphs show how the agent’s survival time and the reward vary as the training step increases.
 In the code, we also have a lot of data to quantify rewards and agent performance. For example, the distance between the fireball, the number of lives lost, the command sent, different types of blocks the agent stands on.
 It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. 
 
-Qualitative Evaluation:
+## Qualitative Evaluation:
 
 We can evaluate the agent based on how long it survives for each game playing. As the training time increases, the agent should be able to dodge fireballs and avoid fire blocks more often, which therefore can increase the survival time. 
 By observing our agent playing the game, we can conclude that whether the agent is learning how to dodge the fireball and avoid the fire on the ground, or whether he is behaving randomly. 
