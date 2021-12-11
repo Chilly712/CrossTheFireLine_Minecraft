@@ -16,6 +16,7 @@ Firstly,we decided to observe the coming of the Fireball from the end point of t
 <br>
 Figure 1: start and end points of fireball.
 <br>
+<br>
 We first modified the observation space to ensure that the information of fire block location can be passed to the agent. Our first attempt was to create a new fireball observation space to store areas that will be in fire soon (after ghast shoot the fire ball). That is, when calling get_observation() method, the agent will receive two arrays. However, we later found that the agent's performance did not improve during training, so we speculated that the agent might not be able to distinguish between the two arrays, original observation space and fire_ball observation space. Therefore, we re-design our code to incorporate the information of the fireball observation space into the original observation space using logical_or in NumPy. Finally, we applied the Proximal Policy Optimization (PPO) to train our agent.
 
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/returned_obs.png)
