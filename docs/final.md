@@ -27,10 +27,10 @@ We first modified the observation space to ensure that the information of fire b
 <br>
 (Figure 3: The combination of fire_ball observation space and original grid observation space)
 
-### state
+### State
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
 
-### reward
+### Reward
 Our discrete agent receives a negative reward whenever he touches the fire. We also give a negative reward when the agent's health points decrease.  
 One of the important metrics we use for evaluation is the survival time per episode. An episode ends after sending 1000 commands or when the agent dies. Our goal of this project is to let the agent learn how to avoid the fire on the floor and survive longer under the attack of the ghast. Therefore, we give a higher reward to the agent if he survives for a longer time.
 
