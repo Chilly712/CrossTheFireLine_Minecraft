@@ -27,8 +27,15 @@ We first modified the observation space to ensure that the information of fire b
 <br>
 (Figure 3: The combination of fire_ball observation space and original grid observation space)
 
+### state
+The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
+
+### reward
+Our discrete agent receives a negative reward whenever he touches the fire. We also give a negative reward when the agent's health points decrease.  
+One of the important metrics we use for evaluation is the survival time per episode. An episode ends after sending 1000 commands or when the agent dies. Our goal of this project is to let the agent learn how to avoid the fire on the floor and survive longer under the attack of the ghast. Therefore, we give a higher reward to the agent if he survives for a longer time.
 
 
+### Baseline
 To see how well the agent performs, we wrote the baseline for comparison. The baseline is allowing agent to only view the nearest block left, right, front, and back. We declare the empty list for storing the safe block and another list to store all moves in 4 different directions. If the left block is NOT occupied by the fire, the turn left command will be added to the safe_block list. Similarly, all other 3 blocks applied the same rules. After the verification, we make agent randomly pick the command in the safe_block list, which means any command in the list will lead to the safe move. However, if 4 nearest blocks are full of fire, agent would have no choice but torandomly pick one command and execute it. We regard the baseline as a minimum standard; our agent must perform better than the baseline result, and has the basic consciousness not to step on the fire.
 
 
