@@ -81,6 +81,7 @@ It is easy to see from these two graphs that the untrained agent dies easily, bu
 <img src="images/survival_Time.jpeg" width="700">
 <br>
 (Figure 6: Survival Time with Continuous Observation Space)
+<br>
 <img src="images/continuous_return.jpeg" width="700">
 <br>
 (Figure 7: Return with Continuous Observation Space)
