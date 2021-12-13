@@ -58,6 +58,10 @@ We have two measurments. The following graphs show how the agent’s survival ti
 In the code, we also have a lot of data to quantify rewards and agent performance. For example, the distance between the fireball, the number of lives lost, the command sent, different types of blocks the agent stands on.
 It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. 
 
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/survival_Time.jpeg)
+<br>
+(Figure 5: Survival Time with Continuous Observation Space)
+
 ### Qualitative Evaluation:
 
 We can evaluate the agent based on how long it survives for each game playing. As the training time increases, the agent should be able to dodge fireballs and avoid fire blocks more often, which therefore can increase the survival time. 
@@ -65,7 +69,7 @@ By observing our agent playing the game, we can conclude that whether the agent 
 
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/continuous_return.jpeg)
 <br>
-(Figure 5: Return with Continuous Observation Space)
+(Figure 6: Return with Continuous Observation Space)
 
 
 
