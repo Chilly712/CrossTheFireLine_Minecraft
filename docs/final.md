@@ -96,18 +96,11 @@ By observing our agent playing the game, we can conclude that whether the agent 
 ## Reference:
 We used the class material and assignment2 as a start up. 
 <br>
-Malmo XML http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
-<br>
-Malmo project documentation Github https://github.com/microsoft/malmo
-<br>
-PPO.PPOTrainer parameters https://medium.com/aureliantactics/ppo-hyperparameters-and-ranges-6fc2d29bccbe
-<br>
-https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-PPO.md
-<br>
-Matplotlib for plotting fireball path https://matplotlib.org
-<br>
-NumPy Documentation https://numpy.org
-<br>
-RLlib environment https://docs.ray.io/en/latest/rllib-env.html
-<br>
-PPO Algorithm https://arxiv.org/pdf/1707.06347.pdf
+- [Malmo XML](http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv)
+- [Malmo project documentation Github](https://github.com/microsoft/malmo)
+- [PPO.PPOTrainer parameters](https://medium.com/aureliantactics/ppo-hyperparameters-and-ranges-6fc2d29bccbe)
+- [PPO github](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-PPO.md)
+- [Matplotlib for plotting path](https://matplotlib.org)
+- [Numpy Documentation](https://numpy.org)
+- [RLlib environment](https://docs.ray.io/en/latest/rllib-env.html)
+- [PPO Algorithm](https://arxiv.org/pdf/1707.06347.pdf)
