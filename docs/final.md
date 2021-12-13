@@ -57,7 +57,6 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
 <ul>
   <li>PPO algorithm</li>
 <br>
-<br>
 After reviewing the academic papers of PPO, we have some basic understaning of Proximal Policy Optimization (PPO). PPO is the extended version of Policy Gradient algorithm. The Policy Gradient algorithm is sensitive to the step size, but it is difficult to determine the proper step size. If the difference between the original and the new strategy change alot, it is not conducive for agent to learn. PPO proposes a new function to make sure that an update of the policy won't change too much, which solves the problem in Policy Gradient algorithm.
 </ul>
   
