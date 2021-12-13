@@ -33,17 +33,6 @@ We first modified the observation space to ensure that the information of fire b
 ### Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
 
-## Reward
-It is known that Ghast will launch a fireball at the position where the agent is located, and once the fireball hits the ground, it will ignite the stones on the floor and convert the stones into a fire block. We will get the 5x5 grid around the agent through get_observation() based on agent's location. Since the agent moves randomly during the training process, we use the coordinates of the agent to determine whether it is on the block hit by the fireball. If the agent is in the fire block, a negative reward is given. If the agent steps on the stone successfully, a positive reward will be given.
-
-- Calculation method: 
-take the position where ghast is scheduled to launch the fireball as the aim position; take the X position and Y position after the agent takes the action as the current position. If the aim position is included in the 5x5 grid observed by current position, we will update the corresponding block in current grid to fire. Therefore, the agent can repeatedly take the next action based on the latest situation.
-
-By calculating the difference in the health value (Life) returned by each episode of the agent, we can determine whether the agent was hit by a fireball or stepped on the fireblock. If the Life decreases, it means that the agent has not taken a good action, so the negative reward will be given, and vice versa.
-
-The agent’s initial life is 20, and the damage of single fireball is not that huge. Therefore, under certain conditions (for example, all the blocks around the agent are fireblock, and the agent has nowhere to go), the agent is bound to step on the fireblock. While the negative reward is given, we also obtain the survival time of the agent through the timeAlive atttribute in the observation, so we can use the time that the agent survives as the positive reward.
-
-
 ### State
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
 
