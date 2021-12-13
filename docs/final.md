@@ -79,17 +79,18 @@ By observing our agent playing the game, we can conclude that whether the agent 
 
 
 ## Reference: [TODO]
-  Malmo project documentation and github page to set up the xml environment
-  <br>
-  http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
-  <br>
-  https://github.com/microsoft/malmo
-  <br>
-  PPO.PPOTrainer
-  <br>
-  Matplotlib for plotting fireball path
-  <br>
-  NumPy documentation
-  <br>
-  https://docs.ray.io/en/latest/rllib-env.html
-  
+We used the class material and assignment2 as a start up. 
+<br>
+Malmo XML http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
+<br>
+Malmo project documentation Github https://github.com/microsoft/malmo
+<br>
+PPO.PPOTrainer parameters https://medium.com/aureliantactics/ppo-hyperparameters-and-ranges-6fc2d29bccbe
+<br>
+https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-PPO.md
+<br>
+Matplotlib for plotting fireball path https://matplotlib.org
+<br>
+NumPy Documentation https://numpy.org
+<br>
+RLlib environment https://docs.ray.io/en/latest/rllib-env.html
