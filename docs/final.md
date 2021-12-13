@@ -40,7 +40,7 @@ self.action_space = Box(low = -1, high = 1, shape=(2,))  # move, turn
 <br>
 Our agent continuous action space cantains two kinds of actions, move [-1,1] and turn [-1,-1]. When the agent detects the fire on the grid in the observation space, it will use yaw and different commands to avoid the fire.
 
-### State
+### State [TODO]
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
 
 The continuous agent receives an array containing the location and orientation of the agent, and the locations of the nearby fire blocks (including the blocks that will be hit by the fireball) as the state observation.
@@ -57,7 +57,7 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
 ## Evaluation: 
 We will use both quantitative and qualitative methods to evaluate out AI and show how our agent operates. 
 
-### Quantitative Evaluation: 
+### Quantitative Evaluation: [TODO]
 
 We have two measurments. The following graphs show how the agent’s survival time and the reward vary as the training step increases.
 In the code, we also have a lot of data to quantify rewards and agent performance. For example, the distance between the fireball, the number of lives lost, the command sent, different types of blocks the agent stands on.
@@ -67,7 +67,7 @@ It is easy to see from these two graphs that the untrained agent dies easily, bu
 <br>
 (Figure 5: Survival Time with Continuous Observation Space)
 
-### Qualitative Evaluation:
+### Qualitative Evaluation: [TODO]
 
 We can evaluate the agent based on how long it survives for each game playing. As the training time increases, the agent should be able to dodge fireballs and avoid fire blocks more often, which therefore can increase the survival time. 
 By observing our agent playing the game, we can conclude that whether the agent is learning how to dodge the fireball and avoid the fire on the ground, or whether he is behaving randomly. 
@@ -78,7 +78,7 @@ By observing our agent playing the game, we can conclude that whether the agent 
 
 
 
-## Reference: [TODO]
+## Reference:
 We used the class material and assignment2 as a start up. 
 <br>
 Malmo XML http://microsoft.github.io/malmo/0.30.0/Schemas/MissionHandlers.html#SchemaPropertiesv
