@@ -58,6 +58,7 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
   <li>PPO algorithm</li>
 <br>
 After reviewing the academic papers of PPO, we have some basic understaning of Proximal Policy Optimization (PPO). PPO is the extended version of Policy Gradient algorithm. The Policy Gradient algorithm is sensitive to the step size, but it is difficult to determine the proper step size. If the difference between the original and the new strategy change alot, it is not conducive for agent to learn. PPO proposes a new function to make sure that an update of the policy won't change too much, which solves the problem in Policy Gradient algorithm.
+We choose this algorithm since it can be used for environments with either discrete or continuous aciton spaces.
 </ul>
   
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/PPO%20algorithm.png)
