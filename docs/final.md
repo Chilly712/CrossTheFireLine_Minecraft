@@ -53,6 +53,16 @@ One of the important metrics we use for evaluation is the survival time per epis
 ### Baseline
 To see how well the agent performs, we wrote the baseline for comparison. The baseline is allowing agent to only view the nearest block left, right, front, and back. We declare the empty list for storing the safe block and another list to store all moves in 4 different directions. If the left block is NOT occupied by the fire, the turn left command will be added to the safe_block list. Similarly, all other 3 blocks applied the same rules. After the verification, we make agent randomly pick the command in the safe_block list, which means any command in the list will lead to the safe move. However, if 4 nearest blocks are full of fire, agent would have no choice but torandomly pick one command and execute it. We regard the baseline as a minimum standard; our agent must perform better than the baseline result, and has the basic consciousness not to step on the fire.
 
+### Training model
+<ul>
+  <li>PPO algorithm</li>
+<br>
+<br>
+After reviewing the academic papers of PPO, we have some basic understaning of Proximal Policy Optimization (PPO). PPO is the extended version of Policy Gradient algorithm. The Policy Gradient algorithm is sensitive to the step size, but it is difficult to determine the proper step size. If the difference between the original and the new strategy change alot, it is not conducive for agent to learn. PPO proposes a new function to make sure that an update of the policy won't change too much, which solves the problem in Policy Gradient algorithm.
+  
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/PPO%20algorithm.png)
+<br>
+(Figure 5: PPO algorithm)
 
 ## Evaluation: 
 We will use both quantitative and qualitative methods to evaluate out AI and show how our agent operates. 
@@ -65,10 +75,10 @@ It is easy to see from these two graphs that the untrained agent dies easily, bu
 
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/survival_Time.jpeg)
 <br>
-(Figure 5: Survival Time with Continuous Observation Space)
+(Figure 6: Survival Time with Continuous Observation Space)
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/continuous_return.jpeg)
 <br>
-(Figure 6: Return with Continuous Observation Space)
+(Figure 7  : Return with Continuous Observation Space)
 
 ### Qualitative Evaluation: [TODO]
 
@@ -93,3 +103,5 @@ Matplotlib for plotting fireball path https://matplotlib.org
 NumPy Documentation https://numpy.org
 <br>
 RLlib environment https://docs.ray.io/en/latest/rllib-env.html
+<br>
+https://arxiv.org/pdf/1707.06347.pdf
