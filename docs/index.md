@@ -5,7 +5,7 @@ title:  Home
 
 Github Repository: https://github.com/Chilly712/CrossTheFireLine_Minecraft
 
-Project Summary: ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/Ghast.jpg)
+Project Summary: <img src="images/Ghast.jpg" width="700">
 
 Reports:
 
