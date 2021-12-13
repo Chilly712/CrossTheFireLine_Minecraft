@@ -65,7 +65,7 @@ By observing our agent playing the game, we can conclude that whether the agent 
 
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/continuous_return.jpeg)
 <br>
-(Figure 4: Return with Continuous Observation Space)
+(Figure 5: Return with Continuous Observation Space)
 
 
 
