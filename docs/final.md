@@ -37,6 +37,7 @@ The Ghast can hit several blocks by launching single fireball, so if the agent o
 
 ### Action Space
 self.action_space = Box(low = -1, high = 1, shape=(2,))  # move, turn
+<br>
 Our agent continuous action space cantains two kinds of actions, move [-1,1] and turn [-1,-1]. When the agent detects the fire on the grid in the observation space, it will use yaw and different commands to avoid the fire.
 
 ### State
