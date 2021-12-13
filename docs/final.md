@@ -33,7 +33,11 @@ We first modified the observation space to ensure that the information of fire b
 (Figure 4: Environment setup)
 
 ### Action
-The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
+The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements.
+
+### Action Space
+self.action_space = Box(low = -1, high = 1, shape=(2,))  # move, turn
+Our agent continuous action space cantains two kinds of actions, move [-1,1] and turn [-1,-1]. When the agent detects the fire on the grid in the observation space, it will use yaw and different commands to avoid the fire.
 
 ### State
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
