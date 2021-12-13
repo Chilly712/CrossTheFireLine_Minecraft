@@ -15,24 +15,24 @@ title: Final Report
 In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform [continuous] actions to avoid the fireball.
 
 Firstly,we decided to observe the coming of the Fireball from the end point of the Fireball using Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ) can calculated the needed information, and the graph is showed by
-<img src="images/axquiver.png" width="700">
 
+<img src="images/axquiver.png" width="700">
 <br>
 (Figure 1: start and end points of fireball)
 <br>
 <br>
 We first modified the observation space to ensure that the information of fire block location can be passed to the agent. Our first attempt was to create a new fireball observation space to store areas that will be in fire soon (after ghast shoot the fire ball). That is, when calling get_observation() method, the agent will receive two arrays. However, we later found that the agent's performance did not improve during training, so we speculated that the agent might not be able to distinguish between the two arrays, original observation space and fire_ball observation space. Therefore, we re-design our code to incorporate the information of the fireball observation space into the original observation space using logical_or in NumPy. Finally, we applied the Proximal Policy Optimization (PPO) to train our agent.
 
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/returned_obs.png)
+<img src="images/returned_obs.png" width="700">
 <br>
 (Figure 2: The original observation space)
 <br>
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/fireball_obs.png)
+<img src="images/fireball_obs.png" width="700">
 <br>
 (Figure 3: The combination of fire_ball observation space and original grid observation space)
 
 ### Setup an Environment
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/environment_setup.png)
+<img src="images/environment_setup.png" width="700">
 <br>
 (Figure 4: Environment setup)
 
@@ -64,8 +64,8 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
 After reviewing the academic papers of PPO, we have some basic understaning of Proximal Policy Optimization (PPO). PPO is the extended version of Policy Gradient algorithm. The Policy Gradient algorithm is sensitive to the step size, but it is difficult to determine the proper step size. If the difference between the original and the new strategy change alot, it is not conducive for agent to learn. PPO proposes a new function to make sure that an update of the policy won't change too much, which solves the problem in Policy Gradient algorithm.
 We choose this algorithm since it can be used for environments with either discrete or continuous aciton spaces.
 </ul>
-  
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/PPO%20algorithm.png)
+ 
+<img src="images/PPO%20algorithm.png" width="700">
 <br>
 (Figure 5: PPO algorithm)
 
@@ -78,12 +78,12 @@ We have two measurments. The following graphs show how the agent’s survival ti
 In the code, we also have a lot of data to quantify rewards and agent performance. For example, the distance between the fireball, the number of lives lost, the command sent, different types of blocks the agent stands on.
 It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. 
 
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/survival_Time.jpeg)
+<img src="images/survival_Time.jpeg" width="700">
 <br>
 (Figure 6: Survival Time with Continuous Observation Space)
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/continuous_return.jpeg)
+<img src="images/continuous_return.jpeg" width="700">
 <br>
-(Figure 7  : Return with Continuous Observation Space)
+(Figure 7: Return with Continuous Observation Space)
 
 ### Qualitative Evaluation:
 
