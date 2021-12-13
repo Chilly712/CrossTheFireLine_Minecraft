@@ -5,7 +5,7 @@ title:  Home
 
 Github Repository: https://github.com/Chilly712/CrossTheFireLine_Minecraft
 
-Project Summary: 
+Project Summary: [add an image]
 
 Reports:
 
