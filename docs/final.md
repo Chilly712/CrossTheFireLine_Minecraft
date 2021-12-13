@@ -64,9 +64,10 @@ In the code, we also have a lot of data to quantify rewards and agent performanc
 It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. 
 
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/survival_Time.jpeg)
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/continuous_return.jpeg)
 <br>
 (Figure 5: Survival Time with Continuous Observation Space)
+![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/continuous_return.jpeg)
+<br>
 (Figure 6: Return with Continuous Observation Space)
 
 ### Qualitative Evaluation: [TODO]
