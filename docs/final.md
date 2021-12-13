@@ -29,6 +29,8 @@ We first modified the observation space to ensure that the information of fire b
 
 ### Setup an Environment
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/environment_setup.png)
+<br>
+(Figure 4: Environment setup)
 
 ### Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
