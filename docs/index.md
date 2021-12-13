@@ -3,10 +3,11 @@ layout: default
 title:  Home
 ---
 
-Github Repository: https://github.com/Chilly712/CrossTheFireLine_Minecraft
+
 <img src="images/Ghast.jpg" width="700">
 <br>
-Project Summary:
+
+# Project Summary:
 
 Reports:
 
@@ -14,3 +15,4 @@ Reports:
 - [Status](status.html)
 - [Final](final.html)
 
+# - [Github Repository:](https://github.com/Chilly712/CrossTheFireLine_Minecraft)
