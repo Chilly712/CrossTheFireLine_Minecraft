@@ -10,7 +10,7 @@ title:  Home
 ## Project Summary:
 
 
-- [Github Repository:](https://github.com/Chilly712/CrossTheFireLine_Minecraft)
+- [Github Repository](https://github.com/Chilly712/CrossTheFireLine_Minecraft)
 
 ## Reports:
 
