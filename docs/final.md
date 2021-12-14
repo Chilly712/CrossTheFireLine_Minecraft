@@ -7,9 +7,7 @@ title: Final Report
 [![CrossTheFireLine_FinalPresentation](https://res.cloudinary.com/marcomontalbano/image/upload/v1639465193/video_to_markdown/images/youtube--IjyZNjy4_5E-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=IjyZNjy4_5E "CrossTheFireLine_FinalPresentation")
 
 ## Project Summary:
-  We implemented a game called CrossTheFireLine, similiar to the Dodge Ball; the agent should learn to avoid getting hit by the fireball from the Ghast as well as  to avoid stepping on the fire block. A ghast that can shoot fireballs will appear in the air and move randomly. When fireball falls to the ground, the stone will be set on fire and these blocks will convert into fire blocks. If the agent steps on the fire or get git by the fireball, it will receive the negative reward. Both our agent Steve and the Ghast's activity space will be limited inside the 60 x 60 area, surrounded by sand walls. Steve needs to observe his surroundings and avoid getting negative reward so that he can survive for longer time. 
-  
-  The output of the algorithm should be the list of actions.
+  We implemented a game called CrossTheFireLine, similiar to the Dodge Ball; the agent should learn to avoid getting hit by the fireball from the Ghast as well as  to avoid stepping on the fire block. A ghast that can shoot fireballs will appear in the air and move randomly. When fireball falls to the ground, the stone will be set on fire and these blocks will convert into fire blocks. If the agent steps on the fire or get git by the fireball, it will receive the negative reward. Both our agent Steve and the Ghast's activity space will be limited inside the 60 x 60 area, surrounded by sand walls. Steve needs to observe his surroundings and avoid getting negative reward so that he can survive for longer time. The output of the algorithm should be the list of actions.
   
   
 ## Approach:
@@ -39,10 +37,8 @@ We first modified the observation space to ensure that the information of fire b
 <br>
 (Figure 4: The combination of fire_ball observation space and original grid observation space)
 
-
 ### Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements. Now we have two agents, one performs discrete actions and the other performs continuous actions.
-
 
 ### Action Space
 self.action_space = Box(low = -1, high = 1, shape=(2,))  # move, turn for ContinuousMovement
@@ -53,7 +49,7 @@ Our agent continuous action space cantains two kinds of actions, move [-1,1] and
 self.action_space = Discrete(len(self.action_dict))  # for DiscreteMovement
 <br>
 self.action_dict contains simple movements including move and turn with float32 indicating the different speed and direction. For example, "move 1" means full speed ahead while "move -0.5" means moves backwords at half speed. Our agent receive and perform the appropriate action from self.action_dict after training. 
- 
+
 
 ### State
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
