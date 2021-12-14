@@ -101,7 +101,6 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
   <br>
   - bad performance if we did bad tuning of the reward value
   <br>
-  -
 </ul>
 
 
