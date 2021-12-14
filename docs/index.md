@@ -7,8 +7,7 @@ title:  Home
 <img src="images/Ghast.jpg" width="700">
 <br>
 
-## Project Summary:
-
+## Summarry of the Project:
 
 - [Github Repository](https://github.com/Chilly712/CrossTheFireLine_Minecraft)
 
