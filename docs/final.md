@@ -6,7 +6,7 @@ title: Final Report
 ## Video 
 [![CrossTheFireLine_FinalPresentation](https://res.cloudinary.com/marcomontalbano/image/upload/v1639465193/video_to_markdown/images/youtube--IjyZNjy4_5E-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=IjyZNjy4_5E "CrossTheFireLine_FinalPresentation")
 
-## Project Summary:  [TODO]
+## Project Summary:
   We implemented a game called CrossTheFireLine, similiar to the Dodge Ball; the agent should learn to avoid getting hit by the fireball from the Ghast as well as  to avoid stepping on the fire block. A ghast that can shoot fireballs will appear in the air and move randomly. When fireball falls to the ground, the stone will be set on fire and these blocks will convert into fire blocks. If the agent steps on the fire or get git by the fireball, it will receive the negative reward. Both our agent Steve and the Ghast's activity space will be limited inside the 60 x 60 area, surrounded by sand walls. Steve needs to observe his surroundings and avoid getting negative reward so that he can survive for longer time. 
   
   The output of the algorithm should be the list of actions.
