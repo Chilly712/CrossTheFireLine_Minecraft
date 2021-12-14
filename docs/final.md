@@ -50,10 +50,10 @@ self.action_space = Discrete(len(self.action_dict))  # for DiscreteMovement
 self.action_dict containins simple movements including move and turn with float32 indicating the different speed and direction. For example, "move 1" means full speed ahead while "move -0.5" means moves backwords at half speed. Our agent reveive and perform the appropriate action from self.action_dict after training. 
  
 
-### State [TODO]
+### State
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
 
-The continuous agent receives an array containing the location and orientation of the agent, and the locations of the nearby fire blocks (including the blocks that will be hit by the fireball) as the state observation.
+The continuous agent receives an array containing the location and orientation of the agent, information of the agent includng yaw and pitch, and the locations of the nearby fire blocks (including the blocks that will be hit by the fireball) as the state observation.
 
 ### Reward
 Our agent receives a negative reward whenever he touches the fire. We also give a negative reward when the agent's health points decrease.  
@@ -78,11 +78,11 @@ We choose this algorithm since it can be used for environments with either discr
 ## Evaluation: 
 We will use both quantitative and qualitative methods to evaluate out AI and show how our agent operates. 
 
-### Quantitative Evaluation: [TODO]
+### Quantitative Evaluation:
 
 We have two measurments. The following graphs show how the agent’s survival time and the reward vary as the training step increases.
 In the code, we also have a lot of data to quantify rewards and agent performance. For example, the distance between the fireball, the number of lives lost, the command sent, different types of blocks the agent stands on.
-It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. 
+It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. To make the image more intuitive, we applied linear regression to represent the overall trend.
 
 <img src="images/survivalLinear.png" width="500">  <img src="images/returnsLinear.png" width="500">
 <br>
