@@ -16,7 +16,7 @@ We can observe the coming of the Fireball from <ObservationsFromNearbyEntities> 
 ![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/axquiver.png)
 
 ## Setup an Environment
-![image](https://github.com/Chilly712/CrossTheFireLine_Minecraft/blob/main/docs/images/env.png)
+<img src="images/env.png" width="650">
 
 ## Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements .
