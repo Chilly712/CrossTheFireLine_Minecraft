@@ -41,7 +41,7 @@ We first modified the observation space to ensure that the information of fire b
 
 
 ### Action
-The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements. Therefore we have two agents, one performs discrete actions and the other performs continuous actions.
+The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements. Now we have two agents, one performs discrete actions and the other performs continuous actions.
 
 
 ### Action Space
