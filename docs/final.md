@@ -78,13 +78,21 @@ We have two measurments. The following graphs show how the agent’s survival ti
 In the code, we also have a lot of data to quantify rewards and agent performance. For example, the distance between the fireball, the number of lives lost, the command sent, different types of blocks the agent stands on.
 It is easy to see from these two graphs that the untrained agent dies easily, but as the number of training sessions increases, the agent finds a way to survive longer. 
 
-<img src="images/survival_Time.jpeg" width="700">
+<img src="images/survivalLinear.jpeg" width="400">
 <br>
 (Figure 6: Survival Time with Continuous Observation Space)
 <br>
-<img src="images/continuous_return.jpeg" width="700">
+<img src="images/returnsLinear.jpeg" width="400">
 <br>
 (Figure 7: Return with Continuous Observation Space)
+
+<img src="images/Dis_survivalLinear.jpeg" width="400">
+<br>
+(Figure 8: Survival Time with Discrete Observation Space)
+<br>
+<img src="images/Dis_returnsLinear.jpeg" width="400">
+<br>
+(Figure 9: Return with Discrete Observation Space)
 
 ### Qualitative Evaluation:
 
