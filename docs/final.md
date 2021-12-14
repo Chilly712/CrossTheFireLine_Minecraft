@@ -70,7 +70,7 @@ One of the important metrics we use for evaluation is the survival time per epis
 To see how well the agent performs, we wrote the baseline for comparison. The baseline is allowing agent to only view the nearest block left, right, front, and back. We declare the empty list for storing the safe block and another list to store all moves in 4 different directions. If the left block is NOT occupied by the fire, the turn left command will be added to the safe_block list. Similarly, all other 3 blocks applied the same rules. After the verification, we make agent randomly pick the command in the safe_block list, which means any command in the list will lead to the safe move. However, if 4 nearest blocks are full of fire, agent would have no choice but torandomly pick one command and execute it. We regard the baseline as a minimum standard; our agent must perform better than the baseline result, and has the basic consciousness not to step on the fire.
 
 
-### Comparison [TODO]
+### Comparison
 
 #### Baseline
 <ul>
@@ -129,13 +129,13 @@ It is easy to see from these two graphs that the untrained agent dies easily, bu
 
 <img src="images/survivalLinear.png" width="500">  <img src="images/returnsLinear.png" width="500">
 <br>
-(Figure 6: Survival Time with Continuous Observation Space)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Figure 7: Return with Continuous Observation Space)
+(Figure 6: Survival Time with Continuous Observation Space)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Figure 7: Return with Continuous Observation Space)
 <br>
 
 
 <img src="images/Dis_survivalLinear.png" width="500">  <img src="images/Dis_returnsLinear.png" width="500">
 <br>
-(Figure 8: Survival Time with Discrete Observation Space)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Figure 9: Return with Discrete Observation Space)
+(Figure 8: Survival Time with Discrete Observation Space)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Fig&nbsp;&nbsp;&nbsp;ure 9: Return with Discrete Observation Space)
 <br>
 
 
