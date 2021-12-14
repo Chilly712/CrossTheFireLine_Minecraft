@@ -15,7 +15,7 @@ title: Final Report
 ## Approach: [TODO]
 
 ### Setup an Environment
-<img src="images/environment_setup.png" width="600">
+<img src="images/environment_setup.png" width="650">
 <br>
 (Figure 1: Environment setup)
 <br>
@@ -24,18 +24,18 @@ In order to prevent the agent from walking aimlessly, we confine the agent and g
 
 Firstly,we decided to observe the coming of the Fireball from the end point of the Fireball using Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ) can calculated the needed information, and the graph is showed by
 
-<img src="images/axquiver.png" width="500">
+<img src="images/axquiver.png" width="600">
 <br>
 (Figure 2: start and end points of fireball)
 <br>
 <br>
 We first modified the observation space to ensure that the information of fire block location can be passed to the agent. Our first attempt was to create a new fireball observation space to store areas that will be in fire soon (after ghast shoot the fire ball). That is, when calling get_observation() method, the agent will receive two arrays. However, we later found that the agent's performance did not improve during training, so we speculated that the agent might not be able to distinguish between the two arrays, original observation space and fire_ball observation space. Therefore, we re-design our code to incorporate the information of the fireball observation space into the original observation space using logical_or in NumPy. Finally, we applied the Proximal Policy Optimization (PPO) to train our agent.
 
-<img src="images/returned_obs.png" width="500">
+<img src="images/returned_obs.png" width="650">
 <br>
 (Figure 3: The original observation space)
 <br>
-<img src="images/fireball_obs.png" width="500">
+<img src="images/fireball_obs.png" width="650">
 <br>
 (Figure 4: The combination of fire_ball observation space and original grid observation space)
 
