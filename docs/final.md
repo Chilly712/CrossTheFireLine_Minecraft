@@ -11,6 +11,7 @@ title: Final Report
   
   The output of the algorithm should be the list of [continuous] movements.
   
+  
 ## Approach: [TODO]
 In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform [continuous] actions to avoid the fireball.
 
@@ -31,13 +32,16 @@ We first modified the observation space to ensure that the information of fire b
 <br>
 (Figure 3: The combination of fire_ball observation space and original grid observation space)
 
+
 ### Setup an Environment
 <img src="images/environment_setup.png" width="700">
 <br>
 (Figure 4: Environment setup)
 
+
 ### Action
 The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements.
+
 
 ### Action Space
 self.action_space = Box(low = -1, high = 1, shape=(2,))  # move, turn for ContinuousMovement
@@ -55,6 +59,7 @@ The observation space of our discrete agent is a 5 x 5 grid that contains the in
 
 The continuous agent receives an array containing the location and orientation of the agent, information of the agent includng yaw and pitch, and the locations of the nearby fire blocks (including the blocks that will be hit by the fireball) as the state observation.
 
+
 ### Reward
 Our agent receives a negative reward whenever he touches the fire. We also give a negative reward when the agent's health points decrease.  
 One of the important metrics we use for evaluation is the survival time per episode. An episode ends after sending 1000 commands or when the agent dies. Our goal of this project is to let the agent learn how to avoid the fire on the floor and survive longer under the attack of the ghast. Therefore, we give a higher reward to the agent if he survives for a longer time.
@@ -62,6 +67,11 @@ One of the important metrics we use for evaluation is the survival time per epis
 
 ### Baseline
 To see how well the agent performs, we wrote the baseline for comparison. The baseline is allowing agent to only view the nearest block left, right, front, and back. We declare the empty list for storing the safe block and another list to store all moves in 4 different directions. If the left block is NOT occupied by the fire, the turn left command will be added to the safe_block list. Similarly, all other 3 blocks applied the same rules. After the verification, we make agent randomly pick the command in the safe_block list, which means any command in the list will lead to the safe move. However, if 4 nearest blocks are full of fire, agent would have no choice but torandomly pick one command and execute it. We regard the baseline as a minimum standard; our agent must perform better than the baseline result, and has the basic consciousness not to step on the fire.
+
+
+### Comparison [TODO]
+Describe the advantage and disadvantage of each are.
+
 
 ### Training model
 <ul>
@@ -75,8 +85,10 @@ We choose this algorithm since it can be used for environments with either discr
 <br>
 (Figure 5: PPO algorithm)
 
+
 ## Evaluation: 
 We will use both quantitative and qualitative methods to evaluate out AI and show how our agent operates. 
+
 
 ### Quantitative Evaluation:
 
@@ -100,7 +112,6 @@ It is easy to see from these two graphs that the untrained agent dies easily, bu
 
 We can evaluate the agent based on how long it survives for each game playing. As the training time increases, the agent should be able to dodge fireballs and avoid fire blocks more often, which therefore can increase the survival time. 
 By observing our agent playing the game, we can conclude that whether the agent is learning how to dodge the fireball and avoid the fire on the ground, or whether he is behaving randomly. 
-
 
 
 ## Reference:
