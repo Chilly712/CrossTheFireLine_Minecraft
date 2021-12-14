@@ -19,7 +19,8 @@ The information provided by the environmental, ghast and agents will be converte
 
 ## Reports:
 
+- [WebPage](https://chilly712.github.io/CrossTheFireLine_Minecraft/index.html)
 - [Proposal](proposal.html)
 - [Status](status.html)
 - [Final](final.html)
-
+- [image reference](https://firstsportz.com/minecraft-ghast-all-you-need-to-know/)
