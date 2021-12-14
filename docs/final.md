@@ -71,7 +71,38 @@ To see how well the agent performs, we wrote the baseline for comparison. The ba
 
 
 ### Comparison [TODO]
-Describe the advantage and disadvantage of each are.
+
+#### Baseline
+<ul>
+  <li>Advantages (+)</li>
+  - Easy to implement
+  <br>
+  - Need no training (Save time)
+  <br>
+  <li>Disadvantages (-)</li>
+  - Can not memorize the past result
+  <br>
+  - Overall performance won't improve
+  <br>
+  - Only consider the next move (short-sighted)
+</ul>
+
+#### Discrete/Continuous Agent
+<ul>
+  <li>Advantages (+)</li>
+  - Huge improvement in performance
+  <br>
+  - Agent can dodge the flying fireballs
+  <br>
+  - Memorize the past result (far-sighted)
+  <br>
+  <li>Disadvantages (-)</li>
+  - Time wasted due to extremely long training time
+  <br>
+  - bad performance if we did bad tuning of the reward value
+  <br>
+  -
+</ul>
 
 
 ### Training model
