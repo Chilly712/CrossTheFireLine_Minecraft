@@ -44,6 +44,14 @@ self.action_space = Box(low = -1, high = 1, shape=(2,))  # move, turn
 <br>
 Our agent continuous action space cantains two kinds of actions, move [-1,1] and turn [-1,-1]. When the agent detects the fire on the grid in the observation space, it will use yaw and different commands to avoid the fire.
 
+<br>
+<br>
+
+self.action_space = Discrete(len(self.action_dict))
+<br>
+self.action_dict containins simple movements including move and turn with float32 indicating the different speed and direction. For example, "move 1" means full speed ahead while "move -0.5" means moves backwords at half speed. Our agent reveive and perform the appropriate action from self.action_dict after training. 
+ 
+
 ### State [TODO]
 The observation space of our discrete agent is a 5 x 5 grid that contains the information about the nearby fire blocks (including those blocks that will be set on fire by the fireball soon). 
 
