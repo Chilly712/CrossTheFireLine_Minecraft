@@ -18,6 +18,7 @@ title: Final Report
 <img src="images/environment_setup.png" width="700">
 <br>
 (Figure 1: Environment setup)
+<br>
 
 In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform [continuous] actions to avoid the fireball.
 
