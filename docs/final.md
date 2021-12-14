@@ -9,7 +9,7 @@ title: Final Report
 ## Project Summary:  [TODO]
   We implemented a game called CrossTheFireLine, similiar to the Dodge Ball; the agent should learn to avoid getting hit by the fireball from the Ghast as well as  to avoid stepping on the fire block. A ghast that can shoot fireballs will appear in the air and move randomly. When fireball falls to the ground, the stone will be set on fire and these blocks will convert into fire blocks. If the agent steps on the fire or get git by the fireball, it will receive the negative reward. Both our agent Steve and the Ghast's activity space will be limited inside the 60 x 60 area, surrounded by sand walls. Steve needs to observe his surroundings and avoid getting negative reward so that he can survive for longer time. 
   
-  The output of the algorithm should be the list of [continuous] movements.
+  The output of the algorithm should be the list of actions.
   
   
 ## Approach: [TODO]
@@ -20,7 +20,7 @@ title: Final Report
 (Figure 1: Environment setup)
 <br>
 <br>
-In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform [continuous] actions to avoid the fireball.
+In order to prevent the agent from walking aimlessly, we confine the agent and ghast to a three-dimensional space. Ghast will continuously shoot fireballs at the agent, and the agent can perform actions to avoid the fireball.
 
 Firstly,we decided to observe the coming of the Fireball from the end point of the Fireball using Matplotlib, using the function ax.quiver, with parameters(x,y,z,motionX,motionY, motionZ) can calculated the needed information, and the graph is showed by
 
@@ -41,7 +41,7 @@ We first modified the observation space to ensure that the information of fire b
 
 
 ### Action
-The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements.
+The Ghast can hit several blocks by launching single fireball, so if the agent only take discrete movement, its chances of avoiding the fireball are reduced. Hence, we believe the better choice is to let the agent have continuous movements. Therefore we have two agents, one performs discrete actions and the other performs continuous actions.
 
 
 ### Action Space
@@ -52,7 +52,7 @@ Our agent continuous action space cantains two kinds of actions, move [-1,1] and
 
 self.action_space = Discrete(len(self.action_dict))  # for DiscreteMovement
 <br>
-self.action_dict containins simple movements including move and turn with float32 indicating the different speed and direction. For example, "move 1" means full speed ahead while "move -0.5" means moves backwords at half speed. Our agent reveive and perform the appropriate action from self.action_dict after training. 
+self.action_dict contains simple movements including move and turn with float32 indicating the different speed and direction. For example, "move 1" means full speed ahead while "move -0.5" means moves backwords at half speed. Our agent receive and perform the appropriate action from self.action_dict after training. 
  
 
 ### State
