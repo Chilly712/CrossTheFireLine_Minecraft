@@ -12,7 +12,7 @@ title: Final Report
   The output of the algorithm should be the list of actions.
   
   
-## Approach: [TODO]
+## Approach:
 
 ### Setup an Environment
 <img src="images/environment_setup.png" width="650">
